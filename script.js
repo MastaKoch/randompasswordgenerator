@@ -41,6 +41,7 @@ document.getElementById("slider").oninput=function(){
   else{
     document.getElementById("length").innerHTML = "Length: 8"
   }
+  return values;
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
