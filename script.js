@@ -10,11 +10,24 @@ function writePassword() {
 
 }
 
+
 // write the generate password function ***
 function generatePassword(){
 
   // set password length / complexity
-  var complexity = document.getElementById("slider").value;
+  var complexity = 
+  prompt("How long do you want your password to be (8-128 characters)?");
+
+  if (complexity < 8) {
+      alert("Password must be between 8 and 128 characters.");
+      return "n/a";
+  }
+
+  if (complexity > 128){
+      alert("Easy there, champ. Password must be between 8 and 128 characters.");
+      return "n/a";
+  }
+
 
   // // possible password values upper, lower, number, special characters.
   var values= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
@@ -22,23 +35,12 @@ function generatePassword(){
 var password="";
 
 // create for loop to choose password characters
-for(var i=0; i <= complexity; i++){
+for(var i=1; i <= complexity; i++){
   password =  password + values.charAt(Math.floor(Math.random()* Math.floor(values.length-1)));
 }
 
 return password;
 }
 
-// function to set length based on slider position
-document.getElementById("slider").oninput=function(){
-
-  if(document.getElementById("slider").value>=8){
-    document.getElementById("length").innerHTML = "Length: " + document.getElementById("slider").value;
-  }
-  else{
-    document.getElementById("length").innerHTML = "Length: 8"
-  }
-  return values;
-}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
