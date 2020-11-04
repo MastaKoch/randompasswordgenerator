@@ -15,8 +15,9 @@ function writePassword() {
 function generatePassword(){
 
   // set password length / complexity
-  var complexity = 
-  prompt("How long do you want your password to be (8-128 characters)?");
+  var complexity =   
+
+  prompt("How long do you want your password to be (8-128 characters)? Passwords will automatically generate with uppercase, lowercase letters, special characters, and numbers.");
 
   if (complexity < 8) {
       alert("Password must be between 8 and 128 characters.");
@@ -28,9 +29,8 @@ function generatePassword(){
       return "n/a";
   }
 
-
   // // possible password values upper, lower, number, special characters.
-  var values= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  var values= "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz" + "0123456789!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
 var password="";
 
