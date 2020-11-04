@@ -28,6 +28,7 @@ for(var i=0; i <= complexity; i++){
 
 // add password to textbox/display area
 document.getElementById("generate").value = password;
+return generatePassword;
 
 }
 
