@@ -11,29 +11,40 @@ function writePassword() {
 }
 
 
+
 // write the generate password function ***
 function generatePassword(){
 
+      // // possible password values upper, lower, number, special characters.
+            var upper= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var lower= "abcdefghijklmnopqrstuvwxyz";
+            var number= "0123456789";
+            var special= "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+            var values= "";
+
+            var password="";
+
     var upperConfirm = confirm("Do you want upppercase letters in your password?");
         if (upperConfirm){
-            // add "ABCDEFGHIJKLMNOPQRSTUVWXYZ" onto master string.
+            // add "ABCDEFGHIJKLMNOPQRSTUVWXYZ" onto master values string.
             values= values += upper;
 
         }
+
     var lowerConfirm = confirm ("Do you want lowercase letters in your password?");
         if (lowerConfirm){
-            // add "abcdefghijklmnopqrstuvwxyz" onto master string.
+            // add "abcdefghijklmnopqrstuvwxyz" onto master values string.
             values= values += lower;
           
         }
     var numbConfirm = confirm ("Do you want numbers in your password?");
         if (numbConfirm){
-            // add "0123456789" onto master string.
+            // add "0123456789" onto master values string.
             values= values +=number;
         }
     var specConfirm = confirm ("Do you want special characters in your password?");
         if (specConfirm){
-            // add "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~" onto master string.
+            // add "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~" onto master values string.
             values= values +=special;
         }
 //   set password length / complexity
@@ -50,16 +61,6 @@ function generatePassword(){
       alert("Easy there, champ. Password must be between 8 and 128 characters.");
       return "n/a";
   }
-  // // possible password values upper, lower, number, special characters.
-//   var values= "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz" + "0123456789" + "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-  var values= [upper + lower + number + special];
-  var upper= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var lower= "abcdefghijklmnopqrstuvwxyz";
-  var number= "0123456789";
-  var special= "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-  
-  var password="";
-
 
 
 // create for loop to choose password characters
