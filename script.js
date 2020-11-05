@@ -14,7 +14,29 @@ function writePassword() {
 // write the generate password function ***
 function generatePassword(){
 
-  // set password length / complexity
+    var upperConfirm = confirm("Do you want upppercase letters in your password?");
+        if (upperConfirm){
+            // add "ABCDEFGHIJKLMNOPQRSTUVWXYZ" onto master string.
+            values= values += upper;
+
+        }
+    var lowerConfirm = confirm ("Do you want lowercase letters in your password?");
+        if (lowerConfirm){
+            // add "abcdefghijklmnopqrstuvwxyz" onto master string.
+            values= values += lower;
+          
+        }
+    var numbConfirm = confirm ("Do you want numbers in your password?");
+        if (numbConfirm){
+            // add "0123456789" onto master string.
+            values= values +=number;
+        }
+    var specConfirm = confirm ("Do you want special characters in your password?");
+        if (specConfirm){
+            // add "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~" onto master string.
+            values= values +=special;
+        }
+//   set password length / complexity
   var complexity =   
 
   prompt("How long do you want your password to be (8-128 characters)? Passwords will automatically generate with uppercase, lowercase letters, special characters, and numbers.");
@@ -28,11 +50,17 @@ function generatePassword(){
       alert("Easy there, champ. Password must be between 8 and 128 characters.");
       return "n/a";
   }
-
   // // possible password values upper, lower, number, special characters.
-  var values= "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz" + "0123456789!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+//   var values= "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz" + "0123456789" + "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  var values= [upper + lower + number + special];
+  var upper= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lower= "abcdefghijklmnopqrstuvwxyz";
+  var number= "0123456789";
+  var special= "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  
+  var password="";
 
-var password="";
+
 
 // create for loop to choose password characters
 for(var i=1; i <= complexity; i++){
