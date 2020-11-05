@@ -1,1 +1,25 @@
 # randompasswordgenerator
+
+## Random Password Generator - Javascript
+For this assignment, my objective was to create a js file which would interact with the HTML and CSS file to display a working random password generator.
+In order to successfully complete the assignment, I had to make confirm alerts asking 4 questions...
+
+  1. Do you want uppercase letters in your password?
+  2. Do you want lowercase letters in your password?
+  3. Do you want numbers in your password?
+  4. Do you want special characters in your password?
+  
+  Each prompt will either have a confirm or cancel option. If they confirm, then it will include the uppercase/lowercase/number/special character in the password. On the other hand, if the user hits "cancel", then it will not include it in the random password.
+  
+  Then, right before the user clicks the generate password button, one final prompt comes up asking "How many characters do you want your password to be (8-128 characters)?"
+  
+  If the value is between 8 - 128, then it will generate the password. If it is too low or too high, then it will return "n/a" and give an alert saying to adjust the values to fit the parameters.
+  
+ ## Motivation
+ This was the first major roadblock I have encountered since starting bootcamp. Before this, I felt like I had picked up HTML and even advanced CSS with no issues; however, javascript was a completely different story. I found this to be rather frustrating, however, I let my frustrations fuel me to solve the problem at hand to create this random password generator. Special shoutout to Youtube, Jon Jackson, and AskBCS for the support that they have provided me throughout the duration of this challenge. I am confident that my page will work well for you; and thanks again for checking out my page :)
+ 
+ ## Code style
+ Primarily Javascript for this assignment.
+ 
+ 
+  
