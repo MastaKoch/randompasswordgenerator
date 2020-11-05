@@ -24,7 +24,7 @@ In order to successfully complete the assignment, I had to make confirm alerts a
   
   Then, right before the user clicks the generate password button, one final prompt comes up asking "How many characters do you want your password to be (8-128 characters)?"
   
-  ![Screen Shot 2020-11-05 at 5 34 04 PM](https://user-images.githubusercontent.com/72670039/98304115-544b4180-1f8d-11eb-879d-9175f7e13530.png)
+  ![Screen Shot 2020-11-05 at 5 35 23 PM](https://user-images.githubusercontent.com/72670039/98304275-b146f780-1f8d-11eb-9e05-da8943d2a3d6.png)
 
   
   If the value is between 8 - 128, then it will generate the password. If it is too low or too high, then it will return "n/a" and give an alert saying to adjust the values to fit the parameters.
