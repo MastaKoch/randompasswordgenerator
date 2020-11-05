@@ -5,9 +5,20 @@ For this assignment, my objective was to create a js file which would interact w
 In order to successfully complete the assignment, I had to make confirm alerts asking 4 questions...
 
   1. Do you want uppercase letters in your password?
+  
+  ![Screen Shot 2020-11-05 at 5 28 15 PM](https://user-images.githubusercontent.com/72670039/98303619-65478300-1f8c-11eb-8f26-b85afeb3a192.png)
+
   2. Do you want lowercase letters in your password?
+  
+  ![Screen Shot 2020-11-05 at 5 30 37 PM](https://user-images.githubusercontent.com/72670039/98303858-df780780-1f8c-11eb-9d7d-a30d1e24eb49.png)
+  
   3. Do you want numbers in your password?
+  
+  ![Screen Shot 2020-11-05 at 5 33 17 PM](https://user-images.githubusercontent.com/72670039/98303948-06ced480-1f8d-11eb-9b3d-b9dc5d37be32.png)
+  
   4. Do you want special characters in your password?
+  
+  ![Screen Shot 2020-11-05 at 5 34 04 PM](https://user-images.githubusercontent.com/72670039/98303993-1ea65880-1f8d-11eb-93f0-cf30a8a0be56.png)
   
   Each prompt will either have a confirm or cancel option. If they confirm, then it will include the uppercase/lowercase/number/special character in the password. On the other hand, if the user hits "cancel", then it will not include it in the random password.
   
