@@ -37,5 +37,8 @@ In order to successfully complete the assignment, I had to make confirm alerts a
  ## Code style
  Primarily Javascript for this assignment.
  
+ ## Citations / Resources used
+ https://www.youtube.com/watch?v=9sT03jEwcaw&t=1186s
  
+ https://www.youtube.com/watch?v=duNmhKgtcsI&t=1503s
   
